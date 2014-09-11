@@ -35,6 +35,12 @@ ${INSTALL_C} "${OBJDIR}/HydrogenTank/model.mu" "${HYDROGENTANKDIR}"
 ${INSTALL_C} "${OBJDIR}/HydrogenTank/hydrogenTank.tga" "${HYDROGENTANKDIR}"
 ${INSTALL_C} "${SRCDIR}/Parts/HydrogenTank/HydrogenTank.cfg" "${HYDROGENTANKDIR}"
 
+SABATIERDIR="${PARTSDIR}/SabatierReactor"
+${INSTALL_D} "${SABATIERDIR}"
+#${INSTALL_C} "${SRCDIR}/Parts/SabatierReactor/model.mu" "${SABATIERDIR}"
+#${INSTALL_C} "${SRCDIR}/Parts/SabatierReactor/model000.mbm" "${SABATIERDIR}"
+${INSTALL_C} "${SRCDIR}/Parts/SabatierReactor/SabatierReactor.cfg" "${SABATIERDIR}"
+
 ${RM_F} "${DESTDIR}.zip"
 (cd "${SRCDIR}/dist" && ${ZIP_R} "${PACKAGEDIR}.zip" "${PACKAGEDIR}")
 echo "${DESTDIR}.zip is now ready for distribution."
