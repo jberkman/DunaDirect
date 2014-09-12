@@ -32,7 +32,7 @@ PARTSDIR="${DUNADIRECTDIR}/Parts"
 HYDROGENTANKDIR="${PARTSDIR}/HydrogenTank"
 ${INSTALL_D} "${HYDROGENTANKDIR}"
 ${INSTALL_C} "${OBJDIR}/HydrogenTank/model.mu" "${HYDROGENTANKDIR}"
-${INSTALL_C} "${OBJDIR}/HydrogenTank/hydrogenTank.tga" "${HYDROGENTANKDIR}"
+${INSTALL_C} "${SRCDIR}/Parts/Assets/HydrogenTank/HydrogenTank.png" "${HYDROGENTANKDIR}"
 ${INSTALL_C} "${SRCDIR}/Parts/HydrogenTank/HydrogenTank.cfg" "${HYDROGENTANKDIR}"
 
 SABATIERDIR="${PARTSDIR}/SabatierReactor"
