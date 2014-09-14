@@ -14,7 +14,7 @@ PUSHDIR="pushdir"
 ZIP="zip"
 ZIP_R="${ZIP} -r"
 
-SRCDIR="${0%%/*}"
+SRCDIR="$(dirname $0)"
 OBJDIR="${SRCDIR}/obj"
 PACKAGEDIR="DunaDirect-${VERSION}"
 
