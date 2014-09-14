@@ -38,7 +38,7 @@ ${INSTALL_C} "${SRCDIR}/Parts/HydrogenTank/HydrogenTank.cfg" "${HYDROGENTANKDIR}
 SABATIERDIR="${PARTSDIR}/SabatierReactor"
 ${INSTALL_D} "${SABATIERDIR}"
 ${INSTALL_C} "${OBJDIR}/SabatierReactor/model.mu" "${SABATIERDIR}"
-#${INSTALL_C} "${SRCDIR}/Parts/SabatierReactor/model000.mbm" "${SABATIERDIR}"
+${INSTALL_C} "${SRCDIR}/Parts/Assets/SabatierReactor/SabatierReactor.png" "${SABATIERDIR}"
 ${INSTALL_C} "${SRCDIR}/Parts/SabatierReactor/SabatierReactor.cfg" "${SABATIERDIR}"
 
 ${RM_F} "${DESTDIR}.zip"

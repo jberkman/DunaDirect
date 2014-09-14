@@ -4,10 +4,30 @@ ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Box
+    100004: Cylinder
+    100006: Lower_Sphere
+    100008: Upper_Sphere
     400000: //RootNode
+    400002: Box
+    400004: Cylinder
+    400006: Lower_Sphere
+    400008: Upper_Sphere
     2300000: //RootNode
+    2300002: Box
+    2300004: Cylinder
+    2300006: Lower_Sphere
+    2300008: Upper_Sphere
     3300000: //RootNode
+    3300002: Box
+    3300004: Cylinder
+    3300006: Lower_Sphere
+    3300008: Upper_Sphere
     4300000: Cube
+    4300002: Upper_Sphere
+    4300004: Cylinder
+    4300006: Box
+    4300008: Lower_Sphere
     7400000: Default Take
     9500000: //RootNode
   materials:
