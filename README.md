@@ -27,7 +27,7 @@ Parts
 
 The main part is the Sabatier Reactor.  It produces liquid fuel and oxidizer while consuming liquid hydrogen and carbon dioxide. It includes a build-in carbon dioxide intake, but could utilize liquid carbon dioxide with the help of some sort of converter.
 
-Ther other part is a small liquid hydrogen tank. It's about the size of an [FL-T100](http://wiki.kerbalspaceprogram.com/wiki/FL-T100_Fuel_Tank), yet contains enough hydrogen to fill an [FL-T800](http://wiki.kerbalspaceprogram.com/wiki/FL-T800_Fuel_Tank) or [X200-8](http://wiki.kerbalspaceprogram.com/wiki/Rockomax_X200-8_Fuel_Tank). Of course, you can use multiple tanks if you need to produce more fuel.
+The other part is a small liquid hydrogen tank. It's about the size of an [FL-T100](http://wiki.kerbalspaceprogram.com/wiki/FL-T100_Fuel_Tank), yet contains enough hydrogen to fill an [FL-T800](http://wiki.kerbalspaceprogram.com/wiki/FL-T800_Fuel_Tank) or [X200-8](http://wiki.kerbalspaceprogram.com/wiki/Rockomax_X200-8_Fuel_Tank). Of course, you can use multiple tanks if you need to produce more fuel.
 
 Both parts are located in the Utility category, and are unlocked with the Fuel Systems tech.
 
