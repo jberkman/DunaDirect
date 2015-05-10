@@ -41,25 +41,10 @@ ${INSTALL_C} "${SRCDIR}/README.md" "${DESTDIR}"
 GAMEDATADIR="${DESTDIR}/GameData"
 DUNADIRECTDIR="${GAMEDATADIR}/DunaDirect"
 
-#PLUGINSDIR="${DUNADIRECTDIR}/Plugins"
-#${INSTALL_D} "${PLUGINSDIR}"
-#${INSTALL_C} "${OBJDIR}/Debug/DunaDirect.dll" "${PLUGINSDIR}"
-
-PARTSDIR="${DUNADIRECTDIR}/Parts"
-
-HYDROGENTANKDIR="${PARTSDIR}/HydrogenTank"
-${INSTALL_D} "${HYDROGENTANKDIR}"
-${INSTALL_C} "${OBJDIR}/HydrogenTank/model.mu" "${HYDROGENTANKDIR}"
-${INSTALL_C} "${SRCDIR}/Parts/Assets/HydrogenTank/HydrogenTank.png" "${HYDROGENTANKDIR}"
-${INSTALL_C} "${SRCDIR}/Parts/HydrogenTank/HydrogenTank.cfg" "${HYDROGENTANKDIR}"
-
-SABATIERDIR="${PARTSDIR}/SabatierReactor"
-${INSTALL_D} "${SABATIERDIR}"
-${INSTALL_C} "${OBJDIR}/SabatierReactor/model.mu" "${SABATIERDIR}"
-${INSTALL_C} "${SRCDIR}/Parts/Assets/SabatierReactor/SabatierReactor.png" "${SABATIERDIR}"
-${INSTALL_C} "${SRCDIR}/Parts/SabatierReactor/SabatierReactor.cfg" "${SABATIERDIR}"
-
-${INSTALL_C} "${SRCDIR}/CarbonDioxide.cfg" "${DUNADIRECTDIR}"
+${INSTALL_D} "${DUNADIRECTDIR}"
+for config in CarbonDioxide FuelTanks ISRU Intakes ; do
+	${INSTALL_C} "${SRCDIR}/${config}.cfg" "${DUNADIRECTDIR}"
+done
 
 CRPSRCDIR="${SRCDIR}/CommunityResourcePack"
 CRPDIR="${GAMEDATADIR}/CommunityResourcePack"
