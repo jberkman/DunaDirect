@@ -17,7 +17,8 @@
 
 set -xe
 
-VERSION="0.1"
+VERSION="0.2"
+MMVERSION="2.6.3"
 
 INSTALL="install"
 INSTALL_D="${INSTALL} -d"
@@ -40,9 +41,9 @@ ${INSTALL_C} "${SRCDIR}/README.md" "${DESTDIR}"
 GAMEDATADIR="${DESTDIR}/GameData"
 DUNADIRECTDIR="${GAMEDATADIR}/DunaDirect"
 
-PLUGINSDIR="${DUNADIRECTDIR}/Plugins"
-${INSTALL_D} "${PLUGINSDIR}"
-${INSTALL_C} "${OBJDIR}/Debug/DunaDirect.dll" "${PLUGINSDIR}"
+#PLUGINSDIR="${DUNADIRECTDIR}/Plugins"
+#${INSTALL_D} "${PLUGINSDIR}"
+#${INSTALL_C} "${OBJDIR}/Debug/DunaDirect.dll" "${PLUGINSDIR}"
 
 PARTSDIR="${DUNADIRECTDIR}/Parts"
 
@@ -57,6 +58,18 @@ ${INSTALL_D} "${SABATIERDIR}"
 ${INSTALL_C} "${OBJDIR}/SabatierReactor/model.mu" "${SABATIERDIR}"
 ${INSTALL_C} "${SRCDIR}/Parts/Assets/SabatierReactor/SabatierReactor.png" "${SABATIERDIR}"
 ${INSTALL_C} "${SRCDIR}/Parts/SabatierReactor/SabatierReactor.cfg" "${SABATIERDIR}"
+
+${INSTALL_C} "${SRCDIR}/CarbonDioxide.cfg" "${DUNADIRECTDIR}"
+
+CRPSRCDIR="${SRCDIR}/CommunityResourcePack"
+CRPDIR="${GAMEDATADIR}/CommunityResourcePack"
+
+${INSTALL_D} "${CRPDIR}"
+${INSTALL_C} "${CRPSRCDIR}/license.txt" "${CRPDIR}"
+${INSTALL_C} "${CRPSRCDIR}/GameData/CommunityResourcePack/CommonResources.cfg" "${CRPDIR}"
+${INSTALL_C} "${CRPSRCDIR}/GameData/CommunityResourcePack/CRP.version" "${CRPDIR}"
+
+${INSTALL_C} "${SRCDIR}/ModuleManager.${MMVERSION}.dll" "${GAMEDATADIR}"
 
 ${RM_F} "${DESTDIR}.zip"
 (cd "${SRCDIR}/dist" && ${ZIP_R} "${PACKAGEDIR}.zip" "${PACKAGEDIR}" -x "*.DS_Store")

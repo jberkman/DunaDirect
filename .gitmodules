@@ -1,0 +1,3 @@
+[submodule "CommunityResourcePack"]
+	path = CommunityResourcePack
+	url = git@github.com:BobPalmer/CommunityResourcePack.git
