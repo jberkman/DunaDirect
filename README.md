@@ -1,4 +1,4 @@
-DunaDirect 0.2
+DunaDirect 0.3
 ==============
 
 Inspiration
@@ -29,7 +29,7 @@ If you are upgrading from version 0.1, and have existing craft with parts from 0
 Parts
 -----
 
-The stock ISRU has been extended with a Sabatier process. This will convert liquid hydrogen and carbon dioxide into liquid fuel and oxidixer.
+The stock Atmospheric Fluid Spectro-Variometer has been extended with an ISRU Sabatier reactor. This will convert liquid hydrogen and carbon dioxide into liquid fuel and oxidixer.
 
 The [FL-T100](http://wiki.kerbalspaceprogram.com/wiki/FL-T100_Fuel_Tank) and [X200-8](http://wiki.kerbalspaceprogram.com/wiki/Rockomax_X200-8_Fuel_Tank) can now store liquid hydrogen; you're on the honour system for disabling liquid fuel and oxidizer when using these tanks for hydrogen! The tanks include enough Hydrogen to fill a [FL-T800](http://wiki.kerbalspaceprogram.com/wiki/FL-T800_Fuel_Tank)/[X200-8](http://wiki.kerbalspaceprogram.com/wiki/Rockomax_X200-8_Fuel_Tank) and [Jumbo-64](http://wiki.kerbalspaceprogram.com/wiki/Rockomax_Jumbo-64_Fuel_Tank) respectively.
 
