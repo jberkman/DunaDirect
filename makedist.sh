@@ -17,7 +17,7 @@
 
 set -xe
 
-VERSION="0.2"
+VERSION="0.3"
 MMVERSION="2.6.3"
 
 INSTALL="install"
